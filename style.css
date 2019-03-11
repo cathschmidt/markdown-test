@@ -1,0 +1,118 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
+* {
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 700;
+}
+
+.large{
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.mono {
+	font-family: "Source Code Pro", mono;
+}
+
+/* if header is sibling of header, ignore spacing */
+/* test in jekyll/glitch */
+
+h1{
+	font-size: 48px;
+	line-height: 64px;
+	padding: 48px 0;
+}
+h2{
+	font-size: 32px;
+	line-height: 48px;
+	padding: 32px 0;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 32px;
+	padding:24px 0;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 24px;
+	padding: 20px 0;
+}
+
+p {
+	font-size: 20px;
+	line-height: 32px;
+	padding-bottom: 20px; /* 20px padding bottom */
+}
+
+p.small {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 16px; /* 16px margin bottom */
+}
+
+body{
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* getting rid of extra space with headers together */
+
+h1 + h2 {
+	padding-top: 0;
+}
+
+h2 + h3 {
+	padding-top: 0;
+}
+
+h3 + h4 {
+	padding-top: 0;
+}
+
+@media screen and (max-width: 1000px){
+
+	h1 {
+		font-size: 32px;
+		line-height: 48px;
+		padding: 32px 0;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+		padding: 24px 0;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 24px;
+		padding:20px 0;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 24px;
+		padding: 20px 0;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		padding-bottom: 16px; /* 20px margin bottom */
+	}
+
+}
+
